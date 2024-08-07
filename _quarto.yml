@@ -1,0 +1,85 @@
+project:
+  type: website
+  output-dir: docs
+
+website:
+  page-navigation: true
+  title: "MATH 246"
+  description: "Homepage for MATH 246 - Intermediate Statistics, Fall 2024."
+  site-url: "https://math246-f24.github.io/"
+
+  repo-url: https://github.com/intermediate-stats/math-246.github.io/
+  repo-actions: [edit, issue]
+
+  open-graph: true
+  twitter-card:
+    creator: "@minebocek"
+    image: "img/twitter-card.png"
+
+  sidebar:
+    background: "#3A5883" # Pantone Chambray Blue - Spring 2024, darkened to pass contrast checks
+    logo: "img/logo.png"
+    pinned: true
+    align: center
+    tools:
+      - icon: github
+        href: https://github.com/sta199-s24
+        text: "GitHub organization"
+      - icon: code-square
+        href: https://cmgr.oit.duke.edu/containers
+        text: "RStudio containers"
+      - icon: life-preserver
+        href: https://docs.google.com/spreadsheets/d/1Mw69d1Ro-_G1Y8x7FH1wqCI04bxLpVOJ7gp8QSFGJBU/edit#gid=0
+        text: "Office hours"
+      - icon: chat-dots-fill
+        href: https://edstem.org/us/courses/50730/discussion/
+        text: "Ed"
+      - icon: camera-reels-fill
+        href: https://duke.hosted.panopto.com/Panopto/Pages/Sessions/List.aspx?folderID=b5b29027-7084-40bf-9a2f-b0cf0100bb98
+        text: "Class recordings"
+      - icon: check-square-fill
+        text: "Canvas"
+        menu:
+          - text: Gradescope
+            url: https://canvas.duke.edu/courses/26106/external_tools/181
+          - text: Gradebook
+            url: https://canvas.duke.edu/courses/26106/gradebook
+
+    style: docked
+    search: true
+    collapse-level: 1
+    contents:
+      - section: "Course information"
+        contents:
+          - href: course-overview.qmd
+            text: Overview
+         
+      
+      - section: "Labs"
+        contents:
+          - href: labs/Lab_0.qmd
+            text: Lab 0
+         
+      
+            
+  page-footer:
+    #right: 'This page is built with [{{< fa heart >}}]{style="color: #FFBE98;"} and [Quarto](https://quarto.org/).'
+    left: "&copy; Copyright 2024, Joash Geteregechi"
+    background: "#3A5883" # Pantone Chambray Blue - Spring 2024, darkened to pass contrast checks
+
+format:
+  html:
+    theme:
+      light: [cosmo, style/sta199.scss]
+      dark: [cosmo, style/sta199.scss, style/dark.scss]
+    linkcolor: "#3A5883" # Pantone Chambray Blue - Spring 2024, darkened to pass contrast checks
+    toc: true
+    code-copy: true
+    code-overflow: wrap
+    mainfont: "Atkinson Hyperlegible"
+    highlight-style: a11y-dark
+
+execute:
+  freeze: auto
+
+editor: visual

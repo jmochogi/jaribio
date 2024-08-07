@@ -1,0 +1,43 @@
+---
+title: "About the Course"
+---
+
+Intermediate statistics with R.
+This course covers statistical methods not typically covered in introductory statistics courses.
+We shall use your statistical background to learn about modern statistical techniques to design, implement, analyze, and communicate research.
+We begin by reintroducing the key ideas (e.g., data and data distributions, confidence intervals, and hypothesis testing) using modern approaches where applicable and then extend these techniques to more sophisticated statistical analysis tools like multiple regression and Analysis of Variance (ANOVA).
+Real world applications will be emphasized.
+
+## Course Objectives
+Upon successful completion of this course, students will be able to:
+
+- Implement the model-simulate-evaluate process to address data-driven questions on real-world topics.
+
+- Choose and use various statistical analysis techniques (exploratory and inferential) in a variety of “real life” contexts including study design.
+
+- Critically analyze the use of statistics in research, in the media, and in various day-to-day life situations.
+
+- Communicate statistical ideas effectively and in context without relying on statistical jargon.
+
+- Use technology (e.g., R) to perform statistical explorations and manipulations.
+
+- Effectively collaborate with peers on projects and presentations.
+
+
+## Meeting Times & Location
+
+| Day     | Room/Hall                      | Time                          |
+|---------|--------------------------------|-------------------------------|
+| Monday  | Williams Hall 202              |  11:45 am - 1:00 pm           |
+| Wednesday|Williams Hall 202              |  8:30 - 9:45 am               |
+| Friday  | Williams Hall 202              |  10:05 - 11:20 am          |
+
+
+## Prerequisites
+Prerequisites include math placement in group 1, or 3, or completion of MATH 14400, MATH 14500, MATH 21600 or PSYC 207 with a grade of C- (minus) or better.
+Attributes: QL, LA, NS (non-ICC).
+
+
+
+## Workload Expectations
+This is a 3 credits course. Credit is earned at Ithaca College in credit hours as measured by the Carnegie unit. The Carnegie unit is defined as one hour of classroom instruction and two hours of assignments outside the classroom, for a period of 15 weeks for each unit (credit).
