@@ -1,0 +1,156 @@
+[
+  {
+    "objectID": "course-overview.html",
+    "href": "course-overview.html",
+    "title": "About the Course",
+    "section": "",
+    "text": "Intermediate statistics with R. This course covers statistical methods not typically covered in introductory statistics courses. We shall use your statistical background to learn about modern statistical techniques to design, implement, analyze, and communicate research. We begin by reintroducing the key ideas (e.g., data and data distributions, confidence intervals, and hypothesis testing) using modern approaches where applicable and then extend these techniques to more sophisticated statistical analysis tools like multiple regression and Analysis of Variance (ANOVA). Real world applications will be emphasized.",
+    "crumbs": [
+      "Course information",
+      "Overview"
+    ]
+  },
+  {
+    "objectID": "course-overview.html#course-objectives",
+    "href": "course-overview.html#course-objectives",
+    "title": "About the Course",
+    "section": "Course Objectives",
+    "text": "Course Objectives\nUpon successful completion of this course, students will be able to:\n\nImplement the model-simulate-evaluate process to address data-driven questions on real-world topics.\nChoose and use various statistical analysis techniques (exploratory and inferential) in a variety of “real life” contexts including study design.\nCritically analyze the use of statistics in research, in the media, and in various day-to-day life situations.\nCommunicate statistical ideas effectively and in context without relying on statistical jargon.\nUse technology (e.g., R) to perform statistical explorations and manipulations.\nEffectively collaborate with peers on projects and presentations.",
+    "crumbs": [
+      "Course information",
+      "Overview"
+    ]
+  },
+  {
+    "objectID": "course-overview.html#meeting-times-location",
+    "href": "course-overview.html#meeting-times-location",
+    "title": "About the Course",
+    "section": "Meeting Times & Location",
+    "text": "Meeting Times & Location\n\n\n\n\n\n\n\n\nDay\nRoom/Hall\nTime\n\n\n\n\nMonday\nWilliams Hall 202\n11:45 am - 1:00 pm\n\n\nWednesday\nWilliams Hall 202\n8:30 - 9:45 am\n\n\nFriday\nWilliams Hall 202\n10:05 - 11:20 am",
+    "crumbs": [
+      "Course information",
+      "Overview"
+    ]
+  },
+  {
+    "objectID": "course-overview.html#prerequisites",
+    "href": "course-overview.html#prerequisites",
+    "title": "About the Course",
+    "section": "Prerequisites",
+    "text": "Prerequisites\nPrerequisites include math placement in group 1, or 3, or completion of MATH 14400, MATH 14500, MATH 21600 or PSYC 207 with a grade of C- (minus) or better. Attributes: QL, LA, NS (non-ICC).",
+    "crumbs": [
+      "Course information",
+      "Overview"
+    ]
+  },
+  {
+    "objectID": "course-overview.html#workload-expectations",
+    "href": "course-overview.html#workload-expectations",
+    "title": "About the Course",
+    "section": "Workload Expectations",
+    "text": "Workload Expectations\nThis is a 3 credits course. Credit is earned at Ithaca College in credit hours as measured by the Carnegie unit. The Carnegie unit is defined as one hour of classroom instruction and two hours of assignments outside the classroom, for a period of 15 weeks for each unit (credit).",
+    "crumbs": [
+      "Course information",
+      "Overview"
+    ]
+  },
+  {
+    "objectID": "labs/Lab_0.html",
+    "href": "labs/Lab_0.html",
+    "title": "Hello, World!",
+    "section": "",
+    "text": "It is possible that some of you have heard/seen the phrase, Hello, World!, before. That is usually the first thing you learn in programming, i.e., to learn to write a computer program to print this sentence to screen. In this lab, we will not print Hello, World! to the screen. Instead, we will learn how to use R (via RStudio) to perform statistical analyses and to write reports in order to communicate the insights learned from data. While the analysis involves writing computer code, it is in no way going to involve writing computer programs. The goal of today’s lab is to introduce you to R and RStudio. You will learn to access and use RStudio, as well as perform the basic functions regarding statistical analysis. To clarify which is which: R is the name of the programming language itself and RStudio is a convenient interface (Integrated Development Environment or IDE) for working with R. I like to think about R as the car engine and RStudio as a nice driver dashboard. The engine drives the car, but the dashboard makes it easier for the driver to control the car. Most R users work with RStudio.\n\n\nCar Engine and Dashboard\n\nWe will work with the cloud (online) version of RStudio. To access RStudio online, click on the link https://posit.cloud to create an account or to sign in if you already have an account.\n\nAfter signing in to R studio, our next step is to create a new project. You can think of a project as a folder or simply a collection of files. Our project will be called “MATH 246 Fall 2024”. Each lab that you complete will be saved in this project. To create the project, you start by clicking on “New Project” and then change the default name (UNTITLED PROJECT) to “MATH 246 Fall 2024”.\nYay! You now have your project ready. In the next section, we explain the meaning of the various panels on your screen.\n\nYour new R studio project interface will look as follows:\n\n\n\nLeft Panel: The panel on the left is where the action happens. This panel is called the console. Every time you launch RStudio, it will have the same text at the top of the console telling you the version of R that you’re running. Below that information is the symbol ” &gt; “. This is where you enter your commands. When you enter and execute a command, the output will come right below it. These commands and their syntax have evolved over decades (literally) and now provide what many users feel is a fairly natural way to access data, organize, describe, and invoke statistical computations. Try typing 1 + 1 in the console and hit enter.\n\nCode1+1\n\n[1] 2\n\n\n\nUpper Right Panel: The panel in the upper right is called “environment”. It contains, among other things, the history of the actions or commands that you’ve previously entered.\nBottom Right Panel: The panel in the lower right contains tabs for browsing the files in your project folder, access help files for R functions, install and manage R packages, and inspecting visualizations through the viewer tab. By default, all data visualizations you make will appear directly below the code you used to create them. If you would rather your plots appear in the plots tab, you will need to change your global options.\n\nR is an open-source programming language, meaning that users can contribute packages that make our lives easier, and we can use them for free. Packages are simply pre-written code meant to serve specific purposes and may contain other packages inside them. Packages may also contain data sets. Packages are stored in a directory called “Library”. For this lab, and many others in the future, we will use the following two packages:\n\nThe tidyverse package is a very popular “umbrella” package which houses a suite of many different R packages: for data wrangling (including tidying) and data visualization.\nThe openintro package for data and custom functions with the OpenIntro resources. You will notice that the readings frequently refer to data contained in the OpenIntro Package. This is the package.\n\n\nThe command to install a package in R takes the following format:\ninstall.packages(\"package name\")\nTo install tidyverse and openintro, run the following commands:\ninstall.packages(\"tidyverse\")\ninstall.packages(\"openintro\")\nNote: You only need to install packages once, but you need to load them each time you relaunch RStudio. To call load (activate) the above installed packages, you use the following command:\nlibrary(tidyverse)\nlibrary(openintro)\nWhy Tidyverse? We are choosing to use the tidyverse package collection because it consists of a set of packages necessary for different aspects of working with data, anything from loading data to wrangling data to visualizing data to analyzing data. Additionally, these packages share common philosophies and are designed to work together. You can find more about the packages in the tidyverse at tidyverse.org.\n\nSuppose we want to find the mean of the numbers 23,24,26,19,18,25,21, and 39. The first thing you want to do is to get these data into R. We can achieve this by running the code below:\n\nCodex &lt;- c(23,24,26,19,18,25,21, 39) \n# We use the symbol &lt;- for assigning elements to an object. \n\n\nHere, we are creating a vector (a series of numbers) and storing it in an object called x. The symbols &lt;- is used for assignment. In R, we use a # to designate a comment (text that should not be evaluated as code). In above chunk, the text after # is a comment. Comments are a good way to document your code.\nTo find the mean of those numbers, we simply run the command mean(x) as shown below.\n\nCodemean(x)\n\n[1] 24.375\n\n\nThe general format is do_this(on_this). Here, do_this is the function while x is the thing on which we want an action taken.\nTo find the median of the numbers, we run the command median(x) as shown below.\n\nCodemedian(x)\n\n[1] 23.5\n\n\nWe can also create a string object (i.e., a series of non-numerical elements or characters). We use quotes for string characters. See below:\n\nCodey &lt;- c( \"Jane\", \"John\", \"Jess\", \"Jeff\", \"Joe\", \"Holli\", \"Henry\", \"Han\") \n# We use quotes for strings.\n\n\nNow, try to run the command mean(y):\n\nCodemean(y)\n\nWarning in mean.default(y): argument is not numeric or logical: returning NA\n\n\n[1] NA\n\n\nWhat do you get? Programming languages generally produce error messages when you try to perform an inappropriate operation or if there is a mistake in the code. Error messages are a good way to learn what you did wrong. In this case, the mean/average of the object y does not make sense because the entries of y are not numerical.\nYou can, however, perform other operations on y. For example, you may want to know how many Jane entries are in y. To do this, you may simply tabulate the entries in y as shown below:\n\nCodetable(y)\n\ny\n  Han Henry Holli  Jane  Jeff  Jess   Joe  John \n    1     1     1     1     1     1     1     1 \n\n\nWe see that there is only one Jane entry in y. While you could easily count the number of Jane entries in y, the table function is useful when you have many entries and you want to know how many times each entry appears.\nBefore we proceed, delete (or comment out) the mean(y) that you had written earlier.\n\nYou can create a data frame by combining vectors of equal length. Before we do that, let us create two more vectors (a numeric one and a character one).\n\nCodea&lt;-c(3,3,2,2,3,4,1,2)\n\nb&lt;-c(\"F\", \"M\", \"F\", \"M\", \"M\", \"F\", \"M\", \"M\")\n\n\nYou can combine the vectors a, b, c, x, and y into a data frame as follows. We store this in an object called practice_data and then print it. Note that we use an underscore to separate the words practice and data in the name. Do not use a blank space for object or variable names.\n\nCodepractice_data &lt;- data.frame(name=y, age=x, sex=b, year=a)\nprint (practice_data)\n\n   name age sex year\n1  Jane  23   F    3\n2  John  24   M    3\n3  Jess  26   F    2\n4  Jeff  19   M    2\n5   Joe  18   M    3\n6 Holli  25   F    4\n7 Henry  21   M    1\n8   Han  39   M    2\n\n\nNotice that the data frame looks like a more natural way that you are likely to encounter data. Most of the time, data is collected and stored in excel and can be imported into R for use. Throughout the labs, we will learn how to import data from various sources into R.\n\nWe can run various statistics from data frames. Because the data frame combines many vectors (variables) we need to specify the data frame name and the variable we are targeting. For example, to find the mean of age, we write the data frame name and variable name separated by a dollar sign as follows mean(practice_data$age).\n\nCodemean(practice_data$age)\n\n[1] 24.375\n\n\nYou can also find other statistics. For median, the command is median(data$variable). For standard deviation, the command is sd(data$variable).\nYou can also run multiple summary statistics at once using the command summary(median(data$variable)). See below:\n\nCodesummary(practice_data$age)\n\n   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. \n  18.00   20.50   23.50   24.38   25.25   39.00 \n\n\nThe summary command give you the minimum value, first quartile, median, mean, third quartile and maximum value.\n\nYou can create basic plots in base R:\n\nTo create a scatter plot to visualize the relationship between age and year, you can use the code below:\n\nCodeplot(practice_data$age, practice_data$year)\n\n\n\n\n\n\n\n\nTo create a bar plot to visualize the distribution of M and F, you can use the command below:\n\nCodebarplot(table((practice_data$sex)))\n\n\n\n\n\n\n\n\n\nCreate an object (name it income) containing the following numerical elements: 750, 810, 680, 1200, 1500, 1399,1525.\nFind the mean of the values in #1 above.\nCreate another object with names of your choosing and then combine it with the first object to make a data frame called my_data.\nRun the summary statistics for the income variable using my_data data frame that you created in #3 above.\nR comes with many pre-loaded data frames. One such data frame is called mtcars. Run the command ?mtcars to learn more about this data frame. Next, load this data frame into your work space by running the command data(mtcars).\nUse the mtcars data frame to find the median horsepower of the cars.\nCreate a histogram to visualize the distribution of the variable hp. What can you say about the distribution of hp based on the histogram?",
+    "crumbs": [
+      "Labs",
+      "Lab 0"
+    ]
+  },
+  {
+    "objectID": "labs/Lab_0.html#creating-a-new-project",
+    "href": "labs/Lab_0.html#creating-a-new-project",
+    "title": "Hello, World!",
+    "section": "",
+    "text": "After signing in to R studio, our next step is to create a new project. You can think of a project as a folder or simply a collection of files. Our project will be called “MATH 246 Fall 2024”. Each lab that you complete will be saved in this project. To create the project, you start by clicking on “New Project” and then change the default name (UNTITLED PROJECT) to “MATH 246 Fall 2024”.\nYay! You now have your project ready. In the next section, we explain the meaning of the various panels on your screen.",
+    "crumbs": [
+      "Labs",
+      "Lab 0"
+    ]
+  },
+  {
+    "objectID": "labs/Lab_0.html#the-r-studio-interface",
+    "href": "labs/Lab_0.html#the-r-studio-interface",
+    "title": "Hello, World!",
+    "section": "",
+    "text": "Your new R studio project interface will look as follows:\n\n\n\nLeft Panel: The panel on the left is where the action happens. This panel is called the console. Every time you launch RStudio, it will have the same text at the top of the console telling you the version of R that you’re running. Below that information is the symbol ” &gt; “. This is where you enter your commands. When you enter and execute a command, the output will come right below it. These commands and their syntax have evolved over decades (literally) and now provide what many users feel is a fairly natural way to access data, organize, describe, and invoke statistical computations. Try typing 1 + 1 in the console and hit enter.\n\nCode1+1\n\n[1] 2\n\n\n\nUpper Right Panel: The panel in the upper right is called “environment”. It contains, among other things, the history of the actions or commands that you’ve previously entered.\nBottom Right Panel: The panel in the lower right contains tabs for browsing the files in your project folder, access help files for R functions, install and manage R packages, and inspecting visualizations through the viewer tab. By default, all data visualizations you make will appear directly below the code you used to create them. If you would rather your plots appear in the plots tab, you will need to change your global options.",
+    "crumbs": [
+      "Labs",
+      "Lab 0"
+    ]
+  },
+  {
+    "objectID": "labs/Lab_0.html#r-packages",
+    "href": "labs/Lab_0.html#r-packages",
+    "title": "Hello, World!",
+    "section": "",
+    "text": "R is an open-source programming language, meaning that users can contribute packages that make our lives easier, and we can use them for free. Packages are simply pre-written code meant to serve specific purposes and may contain other packages inside them. Packages may also contain data sets. Packages are stored in a directory called “Library”. For this lab, and many others in the future, we will use the following two packages:\n\nThe tidyverse package is a very popular “umbrella” package which houses a suite of many different R packages: for data wrangling (including tidying) and data visualization.\nThe openintro package for data and custom functions with the OpenIntro resources. You will notice that the readings frequently refer to data contained in the OpenIntro Package. This is the package.\n\n\nThe command to install a package in R takes the following format:\ninstall.packages(\"package name\")\nTo install tidyverse and openintro, run the following commands:\ninstall.packages(\"tidyverse\")\ninstall.packages(\"openintro\")\nNote: You only need to install packages once, but you need to load them each time you relaunch RStudio. To call load (activate) the above installed packages, you use the following command:\nlibrary(tidyverse)\nlibrary(openintro)\nWhy Tidyverse? We are choosing to use the tidyverse package collection because it consists of a set of packages necessary for different aspects of working with data, anything from loading data to wrangling data to visualizing data to analyzing data. Additionally, these packages share common philosophies and are designed to work together. You can find more about the packages in the tidyverse at tidyverse.org.",
+    "crumbs": [
+      "Labs",
+      "Lab 0"
+    ]
+  },
+  {
+    "objectID": "labs/Lab_0.html#creating-vectors-in-r",
+    "href": "labs/Lab_0.html#creating-vectors-in-r",
+    "title": "Hello, World!",
+    "section": "",
+    "text": "Suppose we want to find the mean of the numbers 23,24,26,19,18,25,21, and 39. The first thing you want to do is to get these data into R. We can achieve this by running the code below:\n\nCodex &lt;- c(23,24,26,19,18,25,21, 39) \n# We use the symbol &lt;- for assigning elements to an object. \n\n\nHere, we are creating a vector (a series of numbers) and storing it in an object called x. The symbols &lt;- is used for assignment. In R, we use a # to designate a comment (text that should not be evaluated as code). In above chunk, the text after # is a comment. Comments are a good way to document your code.\nTo find the mean of those numbers, we simply run the command mean(x) as shown below.\n\nCodemean(x)\n\n[1] 24.375\n\n\nThe general format is do_this(on_this). Here, do_this is the function while x is the thing on which we want an action taken.\nTo find the median of the numbers, we run the command median(x) as shown below.\n\nCodemedian(x)\n\n[1] 23.5\n\n\nWe can also create a string object (i.e., a series of non-numerical elements or characters). We use quotes for string characters. See below:\n\nCodey &lt;- c( \"Jane\", \"John\", \"Jess\", \"Jeff\", \"Joe\", \"Holli\", \"Henry\", \"Han\") \n# We use quotes for strings.\n\n\nNow, try to run the command mean(y):\n\nCodemean(y)\n\nWarning in mean.default(y): argument is not numeric or logical: returning NA\n\n\n[1] NA\n\n\nWhat do you get? Programming languages generally produce error messages when you try to perform an inappropriate operation or if there is a mistake in the code. Error messages are a good way to learn what you did wrong. In this case, the mean/average of the object y does not make sense because the entries of y are not numerical.\nYou can, however, perform other operations on y. For example, you may want to know how many Jane entries are in y. To do this, you may simply tabulate the entries in y as shown below:\n\nCodetable(y)\n\ny\n  Han Henry Holli  Jane  Jeff  Jess   Joe  John \n    1     1     1     1     1     1     1     1 \n\n\nWe see that there is only one Jane entry in y. While you could easily count the number of Jane entries in y, the table function is useful when you have many entries and you want to know how many times each entry appears.\nBefore we proceed, delete (or comment out) the mean(y) that you had written earlier.",
+    "crumbs": [
+      "Labs",
+      "Lab 0"
+    ]
+  },
+  {
+    "objectID": "labs/Lab_0.html#creating-data-frames",
+    "href": "labs/Lab_0.html#creating-data-frames",
+    "title": "Hello, World!",
+    "section": "",
+    "text": "You can create a data frame by combining vectors of equal length. Before we do that, let us create two more vectors (a numeric one and a character one).\n\nCodea&lt;-c(3,3,2,2,3,4,1,2)\n\nb&lt;-c(\"F\", \"M\", \"F\", \"M\", \"M\", \"F\", \"M\", \"M\")\n\n\nYou can combine the vectors a, b, c, x, and y into a data frame as follows. We store this in an object called practice_data and then print it. Note that we use an underscore to separate the words practice and data in the name. Do not use a blank space for object or variable names.\n\nCodepractice_data &lt;- data.frame(name=y, age=x, sex=b, year=a)\nprint (practice_data)\n\n   name age sex year\n1  Jane  23   F    3\n2  John  24   M    3\n3  Jess  26   F    2\n4  Jeff  19   M    2\n5   Joe  18   M    3\n6 Holli  25   F    4\n7 Henry  21   M    1\n8   Han  39   M    2\n\n\nNotice that the data frame looks like a more natural way that you are likely to encounter data. Most of the time, data is collected and stored in excel and can be imported into R for use. Throughout the labs, we will learn how to import data from various sources into R.",
+    "crumbs": [
+      "Labs",
+      "Lab 0"
+    ]
+  },
+  {
+    "objectID": "labs/Lab_0.html#using-data-frames",
+    "href": "labs/Lab_0.html#using-data-frames",
+    "title": "Hello, World!",
+    "section": "",
+    "text": "We can run various statistics from data frames. Because the data frame combines many vectors (variables) we need to specify the data frame name and the variable we are targeting. For example, to find the mean of age, we write the data frame name and variable name separated by a dollar sign as follows mean(practice_data$age).\n\nCodemean(practice_data$age)\n\n[1] 24.375\n\n\nYou can also find other statistics. For median, the command is median(data$variable). For standard deviation, the command is sd(data$variable).\nYou can also run multiple summary statistics at once using the command summary(median(data$variable)). See below:\n\nCodesummary(practice_data$age)\n\n   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. \n  18.00   20.50   23.50   24.38   25.25   39.00 \n\n\nThe summary command give you the minimum value, first quartile, median, mean, third quartile and maximum value.",
+    "crumbs": [
+      "Labs",
+      "Lab 0"
+    ]
+  },
+  {
+    "objectID": "labs/Lab_0.html#basic-visualizations",
+    "href": "labs/Lab_0.html#basic-visualizations",
+    "title": "Hello, World!",
+    "section": "",
+    "text": "You can create basic plots in base R:\n\nTo create a scatter plot to visualize the relationship between age and year, you can use the code below:\n\nCodeplot(practice_data$age, practice_data$year)\n\n\n\n\n\n\n\n\nTo create a bar plot to visualize the distribution of M and F, you can use the command below:\n\nCodebarplot(table((practice_data$sex)))",
+    "crumbs": [
+      "Labs",
+      "Lab 0"
+    ]
+  },
+  {
+    "objectID": "labs/Lab_0.html#exercises",
+    "href": "labs/Lab_0.html#exercises",
+    "title": "Hello, World!",
+    "section": "",
+    "text": "Create an object (name it income) containing the following numerical elements: 750, 810, 680, 1200, 1500, 1399,1525.\nFind the mean of the values in #1 above.\nCreate another object with names of your choosing and then combine it with the first object to make a data frame called my_data.\nRun the summary statistics for the income variable using my_data data frame that you created in #3 above.\nR comes with many pre-loaded data frames. One such data frame is called mtcars. Run the command ?mtcars to learn more about this data frame. Next, load this data frame into your work space by running the command data(mtcars).\nUse the mtcars data frame to find the median horsepower of the cars.\nCreate a histogram to visualize the distribution of the variable hp. What can you say about the distribution of hp based on the histogram?",
+    "crumbs": [
+      "Labs",
+      "Lab 0"
+    ]
+  }
+]
